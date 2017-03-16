@@ -4,13 +4,14 @@ A study and implementation of ['LazyBrush: Flexible Painting Tool for Hand-drawn
 Questions, issues, suggestions, contact? [simonrodriguez.fr](http://simonrodriguez.fr)
 
 More details (in french) below.
-##Utilisation
+
+## Utilisation
 
 `lazybrush(base_name,mode,save)` (voir détail des arguments ci-dessous)
 
 Des images et tracés sont disponibles dans le répertoire `images`. L'image sera convertie en niveaux de gris. Les tracés doivent être réalisés dans un fichier png transparent, il est important d'utiliser un outil net/dur pour les tracer (par exemple sous Photoshop il convient d'utiliser le crayon et non le pinceau).
 
-##Fonctions
+## Fonctions
 - `[result] = lazybrush( base_name, mode, save )`  
 	Fonction principale.  	**Entrées :**	- le nom de base de l’image à traiter (sans extension). L’algorithme attend que les images `base_name.png` et `base_name_brushes.png` existent.	- le mode de mise à l’échelle. 0 : linéaire, 1 : quadratique, 2 : LoG.	- un booléen indiquant si le résultat doit être sauvegardée. L’image créée sera sauvegardée sous base name output.png   
 	
